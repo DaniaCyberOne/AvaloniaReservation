@@ -1,1 +1,1 @@
-"# AvaloniaReservation" 
+This project for me was a significant contribution to me and my ability to think and do as an engineer. Thank you very much to my teacher for such an interesting topic (Reservation System), this topic helped me reveal the intricacies of the code and the topic itself :)
