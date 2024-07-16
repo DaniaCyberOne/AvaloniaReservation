@@ -51,13 +51,12 @@ namespace MVCPatternAvalonia.Controllers
         {
             if (view.ReservationListBox != null)
             {
-                view.ReservationListBox.Items = model.GetReservations().Select(res => $"{res.Name} - {res.Date.ToShortDateString()} - {res.NumberOfPeople} people").ToList();
+                view.ReservationListBox.Items.Clear();
+                foreach (var reservation in model.GetReservations())
+                {
+                    view.ReservationListBox.Items.Add($"{reservation.Name} - {reservation.Date}");
+                }
             }
-        }
-
-        internal void AddReservation(string? text, DateTimeOffset value1, int value2)
-        {
-            throw new NotImplementedException();
         }
     }
 }
